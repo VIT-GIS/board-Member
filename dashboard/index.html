@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Enrollment Data</title>
+  <link rel="stylesheet" href="../dashboard/styles.css">
+  <script type="module" src="../dashboard/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Company Logo" class="logo">
+    <h1>EasyCab Club Enrollment</h1>
+    <button id="logoutBtn" class="logout-button">Logout</button>
+
+  </header>
+  
+  <main class="container">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by Registration Number">
+    </div>
+    <table id="enrollmentTable" class="responsive-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Registration No.</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Preference 1</th>
+          <th>Preference 2</th>
+          <th>Submitted At</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Data rows will be inserted dynamically here -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 EasyCab. All rights reserved.</p>
+  </footer>
+</body>
+</html>
