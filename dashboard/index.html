@@ -10,10 +10,23 @@
 </head>
 <body>
   <header class="header">
-    <img src="../assets/logo.jpg" alt="Company Logo" class="logo">
+    <img src="../assets/logo.jpeg.jpg" alt="Company Logo" class="logo">
     <h1>GeoSpatial Club Enrollment</h1>
     <button id="logoutBtn" class="logout-button">Logout</button>
+    <button class="menu-btn" id="menu-btn">Menu</button>
   </header>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <button class="close-btn" id="close-btn">&times;</button>
+  <h3>Menu</h3>
+  <ul>
+     <li><a href="../Dashboard/index.html">Dashboard</a></li>
+     <li><a href="../user chatting/index.html">chat</a></li>
+     <li><a href="../profile/index.html">Profile</a></li>
+  </ul>
+</nav>
+
 
   <main class="container">
     <div class="search-container">
@@ -70,5 +83,15 @@
       </form>
     </div>
   </div>
+  <script>
+    // Mobile menu and filter functionality
+    document.getElementById('menu-btn').onclick = function () {
+        document.getElementById('sidebar').classList.toggle('active');
+    };
+
+    document.getElementById('close-btn').onclick = function () {
+        document.getElementById('sidebar').classList.remove('active');
+    };
+</script>
 </body>
 </html>
