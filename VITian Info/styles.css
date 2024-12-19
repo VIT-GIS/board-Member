@@ -55,6 +55,34 @@ main {
     font-size: 16px;
 }
 
+#download-btn {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+#download-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Focus effect */
+#download-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5); /* Green focus ring */
+}
+
+/* Active state */
+#download-btn:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
 table {
     width: 100%;
     max-width: 100%;
