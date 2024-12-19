@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITians Information</title>
-    <link rel="icon" href="../assets/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../VITian Info/styles.css">
 </head>
 
@@ -16,19 +15,21 @@
         <button class="menu-btn" id="menu-btn">Menu</button>
     </header>
 
-     <!-- Sidebar -->
-     <nav class="sidebar" id="sidebar">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
         <button class="close-btn" id="close-btn">&times;</button>
         <ul>
-            <li><a href="../dashboard/index.html">Board Members</a></li>
-       <li><a href="../notice/index.html">Notice</a></li>
-       <li><a href="../VITian Info/index.html">VITian Info</a></li>
-        <li><a href="../location/index.html">VITian Location</a></li>
+            <li><a href="../dashboard/index.html">Dashboard</a></li>
+            <li><a href="../notice/index.html">Notice</a></li>
+            <li><a href="../location/index.html">VITian Location</a></li>
+            <li><a href="../VITian Info/index.html">VITian Info</a></li>
         </ul>
     </nav>
+
     <main>
         <section class="search-bar">
             <input type="text" id="search-input" placeholder="Search by Reg. Number...">
+            <button id="download-btn">Download Excel</button>
         </section>
         <table id="data-table">
             <thead>
@@ -45,10 +46,12 @@
             </tbody>
         </table>
     </main>
+
     <footer>
         <p>&copy; 2024 VITians Information. All rights reserved.</p>
     </footer>
-    <script type="module" src="../VITian Info/scripts.js"></script>
+
+    <script type="module" src="../Registered VITians/scripts.js"></script>
     <script>
         document.getElementById('menu-btn').onclick = function () {
             document.getElementById('sidebar').classList.toggle('active');
